@@ -7,8 +7,6 @@ function bigNumber(a, b) {
 }
 bigNumber(9, 8);
 
-*/
-
 //PROJECT TWO: Landscape or Portrait
 function isLandscape(width, height) {
   return width > height;
@@ -51,3 +49,53 @@ function speedProblems(speed) {
   }
 }
 speedProblems(185);
+*/
+//PROJECT FIVE: Even and Odd Numbers
+
+showNumbers(80);
+
+function showNumbers(limit) {
+  for (let i = 0; i <= limit; i++) {
+    if (i % 2 === 0) console.log("EVEN", i);
+    if (i % 2 !== 0) console.log("ODD", i);
+  }
+}
+
+//PROJECT SIX: Count Truthy
+
+const array = [NaN, 2, 8, 890, "cat", undefined, true];
+
+console.log(countTruthy(array));
+
+function countTruthy(array) {
+  let count = 0;
+  for (const item of array) {
+    if (value) count++;
+  }
+}
+
+//PROJECT SEVEN: String Properties
+const movie = {
+  title: "X-men Apocalypse",
+  releaseYear: 2016,
+  rating: 10,
+  director: "Bryan Singer"
+};
+
+function showProperties(obj) {
+  for (let key in obj) {
+    if (typeof obj[key] === "string") console.log(key, obj[key]);
+  }
+}
+
+showProperties(movie);
+
+//PROJECT EIGHT: Sum of Multiples of 3 and 5
+function sumNumbers(num) {
+  var total = 0;
+  for (let i = 0; i <= num; i++) {
+    if (i % 3 === 0 || i % 5 === 0) total += i;
+    return total;
+  }
+}
+console.log(sumNumbers(80));
