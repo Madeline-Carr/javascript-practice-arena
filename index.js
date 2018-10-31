@@ -49,7 +49,7 @@ function speedProblems(speed) {
   }
 }
 speedProblems(185);
-*/
+
 //PROJECT FIVE: Even and Odd Numbers
 
 showNumbers(80);
@@ -99,3 +99,37 @@ function sumNumbers(num) {
   }
 }
 console.log(sumNumbers(80));
+
+*/
+//PROJECT NINE: Grade
+const marks = [20, 60, 80, 45];
+
+function markAvarage(array) {
+  var total = 0;
+  for (const value of array) total += value;
+  return (avarage = total / array.length);
+}
+function returnGrade(calculatedAvarage) {
+  if (calculatedAvarage < 60) return "F";
+  if (calculatedAvarage < 70) return "D";
+  if (calculatedAvarage < 80) return "C";
+  if (calculatedAvarage < 90) return "B";
+  return "A";
+}
+
+markAvarage(marks);
+console.log(returnGrade(function markAvarage(marks) {}));
+
+
+//PROJECT TEN: STARS
+
+function showStars(stars) {
+  for (let row = 1; i <= rows; row++)
+    let pattern = '';
+    for (let i = 0; i < row; i++) {
+      pattern += '*';
+      console.log(pattern);
+    }
+}
+showStars(8);
+
