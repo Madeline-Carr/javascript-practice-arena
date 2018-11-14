@@ -64,9 +64,42 @@ console.log(tony.info());
 
 let x = {};
 
+//Constructor Functions
 console.log(sherlock.constructor);
 console.log(tony.constructor);
 console.log(rectangle1.constructor);
 console.log(circle1.constructor);
 console.log(x.constructor);
 console.log(MakePerson.constructor);
+
+//For...in loop example
+for (let x in sherlock) {
+  console.log(x + ": " + sherlock[x]);
+}
+
+//For...of loop example
+var avengers = [
+  "Iron Man",
+  "Captain America",
+  "Hulk",
+  "Thor",
+  "Hawkeye",
+  "Black Widow",
+  "Nick Fury",
+  "Maria Hill",
+  "Phil Coulson"
+];
+
+for (let hero of avengers) {
+  console.log(hero);
+}
+
+//Cloning Objects with Spread Operator
+
+const ironMan = { ...tony, power: "arc reactor" };
+console.log(ironMan);
+
+//Cloning Objects with Object.assign
+
+const downeySherlock = Object.assign({ actor: "Robert Downey Jr." }, sherlock);
+console.log(downeySherlock);
