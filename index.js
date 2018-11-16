@@ -104,3 +104,29 @@ console.log(Math.sin(88));
 console.log(Math.cos(88));
 //Tan
 console.log(Math.tan(88));
+
+//String Primitive
+const myName = "Madeline";
+console.log(typeof myName);
+
+//String Object
+const me = new String("Maddie");
+console.log(typeof me);
+
+//String Properties and Meathods
+console.log(myName.includes("Mad"));
+console.log(myName.length);
+console.log(myName.startsWith("Made"));
+console.log(myName.startsWith("line"));
+
+console.log(myName.endsWith("Made"));
+console.log(myName.endsWith("line"));
+
+console.log(myName.indexOf("line"));
+
+console.log(myName.toUpperCase());
+console.log(myName.toLowerCase());
+
+var sentence = "To be, or not to be: that is the question.";
+console.log(sentence.replace("question", "answer"));
+console.log(sentence.toUpperCase());
