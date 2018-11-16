@@ -130,3 +130,21 @@ console.log(myName.toLowerCase());
 var sentence = "To be, or not to be: that is the question.";
 console.log(sentence.replace("question", "answer"));
 console.log(sentence.toUpperCase());
+
+//Template Literals
+var lastLine = "Has been my heart’s undoing.";
+const someWords = `The time I’ve lost in wooing, 
+In watching and pursuing 
+The light, that lies 
+In woman’s eyes, 
+${lastLine}`;
+console.log(someWords);
+
+var num1 = 8;
+var num2 = 10;
+const someWords2 = `${num1} plus ${num2} is equal to ${num1 + num2}!`;
+console.log(someWords2);
+
+//Date Object
+var christmas = new Date(2018, 11, 25);
+console.log(christmas);
