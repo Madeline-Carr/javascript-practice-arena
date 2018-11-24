@@ -29,13 +29,13 @@ const classes = [
   { id: 3, name: "c" }
 ];
 
-const course = classes.find(function(course) {
+const course = classes.find(function (course) {
   return course.name === "a";
 });
 console.log(course);
 
 //findIndex
-const course2 = classes.findIndex(function(course2) {
+const course2 = classes.findIndex(function (course2) {
   return course2.name === "b";
 });
 console.log(course2);
@@ -70,3 +70,25 @@ console.log(first);
 const middle = xmen.splice(2, 1);
 console.log(xmen);
 console.log(middle);
+
+//Deleting an entire array
+let numbers = [8, 88, 888, 8888];
+//or 
+numbers.length = 0;
+//or
+numbers.splice(0, numbers.length);
+//or
+while (numbers.length > 0) {
+  numbers.pop();
+}
+
+numbers = [];
+console.log(numbers);
+
+//Combining and Slicing Arrays
+const first = [1, 2, 3];
+const second = [4, 5, 6];
+const both = first.concat(second);
+console.log(both);
+const slice = both.slice(2, 4);
+console.log(slice);
