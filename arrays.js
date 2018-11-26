@@ -114,3 +114,55 @@ items.forEach(function (item) {
 
 //Arrow Function Version with index
 items.forEach((item, index) => console.log(index, item));
+
+//Joining Arrays
+const things = ["One Thing", "Two thing"];
+const joined = things.join(",");
+
+const message = "We have a Hulk.";
+const parts = message.split(" ");
+console.log(parts);
+
+const combined = parts.join(" ");
+console.log(combined);
+
+//Sorting Number Arrays
+const badNumbers = [2, 8, 4, 12, 10];
+badNumbers.sort();
+console.log(badNumbers);
+badNumbers.reverse();
+console.log(badNumbers);
+
+//Sorting Object Arrays
+const villainsDC = [
+  { id: 1, name: "Joker" },
+  { id: 2, name: "Harley Quinn" }
+];
+
+villainsDC.sort(function (a, b) {
+  const nameA = a.name.toUpperCase();
+  const nameB = b.name.toUpperCase();
+
+  if (nameA < nameB) return -1;
+  if (nameA > nameB) return 1;
+  return 0;
+});
+console.log(villainsDC);
+
+//Testing the Elements of an Array
+const someNumbers = [1, 2, 3, 4];
+//Does every element match?
+const allPositive = someNumbers.every(function (value) {
+  return value >= 0;
+});
+console.log(allPositive);
+//Does at least one match?
+const atLeastOnePositive = someNumbers.some(function (value) {
+  return value >= 0;
+});
+console.log(atLeastOnePositive);
+
+//How to filter an array
+const someMoreNumbers = [1, -2, 3, -4, 5];
+const filtered = someMoreNumbers.filter(number => number >= 0);
+console.log(filtered);
