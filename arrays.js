@@ -86,9 +86,31 @@ numbers = [];
 console.log(numbers);
 
 //Combining and Slicing Arrays
-const first = [1, 2, 3];
-const second = [4, 5, 6];
-const both = first.concat(second);
+const firstArray = [1, 2, 3];
+const secondArray = [4, 5, 6];
+const both = firstArray.concat(secondArray);
 console.log(both);
 const slice = both.slice(2, 4);
 console.log(slice);
+
+//The Spread Operator
+//Adding two arrays with the spread operator
+const combine = [...firstArray, "a", ...secondArray];
+console.log(combine);
+//Copying an array with the spread operator
+const copy = [...combine];
+
+//Iterating an Array with the for... of loop
+const items = ["Bow Tie", "Sonic Screwdriver", "Blue Box"];
+
+for (let item of items) {
+  console.log(item);
+}
+
+//Iterating an Array with the for... each meathod
+items.forEach(function (item) {
+  console.log(item);
+})
+
+//Arrow Function Version with index
+items.forEach((item, index) => console.log(index, item));
