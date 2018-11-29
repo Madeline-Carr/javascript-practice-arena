@@ -166,3 +166,27 @@ console.log(atLeastOnePositive);
 const someMoreNumbers = [1, -2, 3, -4, 5];
 const filtered = someMoreNumbers.filter(number => number >= 0);
 console.log(filtered);
+
+// Mapping an Array
+var lotOfNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+
+function addOne() {
+  var answer = lotOfNumbers.map(function (num) {
+    return num + 1;
+  });
+  console.log(answer);
+}
+addOne();
+
+//Shorter version of the same function
+function addOne2() {
+  var answer = lotOfNumbers.map(num => num + 1);
+  console.log(answer);
+}
+addOne2();
+
+function squareRoot() {
+  var answer = lotOfNumbers.map(Math.sqrt);
+  console.log(answer);
+}
+squareRoot();
