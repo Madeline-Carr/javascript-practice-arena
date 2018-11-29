@@ -22,7 +22,6 @@ console.log(avengers.indexOf("Superman"));
 console.log(avengers.includes("Captain America"));
 
 //Finding Elements (Reference Types)
-
 const classes = [
   { id: 1, name: "a" },
   { id: 2, name: "b" },
