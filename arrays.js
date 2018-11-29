@@ -190,3 +190,20 @@ function squareRoot() {
   console.log(answer);
 }
 squareRoot();
+
+//Reducing an Array
+const numbersReduce = [2, 4, 6, 8];
+
+let sum = 0;
+for (let n of numbersReduce) {
+  sum += n;
+}
+console.log(sum);
+//This is an example of reducing an array.
+const sum2 = numbersReduce.reduce((accumulator, currentValue) => {
+  return accumulator + currentValue;
+}, 0);
+console.log(sum2);
+//This is a shorter version
+const sum3 = numbersReduce.reduce((accumulator, currentValue) => accumulator + currentValue);
+console.log(sum3);
