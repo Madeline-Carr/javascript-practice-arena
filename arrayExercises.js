@@ -55,3 +55,53 @@ function move(array, index, offset) {
     output2.splice(index + offset, 0, arrayElement);
     return output2;
 }
+
+//Project 5: Count Occurrences
+const numbers5 = [1, 2, 3, 4, 1];
+const count = countOccurences(numbers5, 1);
+console.log(count);
+//Solution 1
+function countOccurences(array, searchElement) {
+    let i = 0;
+    for (let element of array) {
+        if (element === searchElement) {
+            i++;
+        }
+    }
+    return i;
+}
+//Solution 2
+countOccurences2(numbers5, 1);
+
+function countOccurences2(array, searchElement) {
+    array.reduce((accumulator, current) => {
+        const occurence = (current === searchElement) ? 1 : 0;
+        console.log(accumulator, current, searchElement);
+        return accumulator + occurence;
+    }, 0);
+}
+
+//Project 6: Get Max
+//Solution 1
+const numbers6 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const max = getMax(numbers6);
+console.log(max);
+function getMax(array) {
+    if (array.length === 0) return undefined;
+    let highest = array[0];
+    for (let element of array) {
+        if (element > highest) {
+            highest = element;
+        }
+    }
+    return highest;
+}
+
+//Solution 2
+const max3 = getMax3(numbers6);
+console.log(max3);
+function getMax3(array) {
+    if (array.length === 0) return undefined;
+    return array.reduce((a, b) => (a > b) ? a : b);
+}
+
