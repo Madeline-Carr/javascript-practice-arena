@@ -3,14 +3,14 @@ function Rectangle(height, width) {
   this.height = height;
   this.width = width;
   this.age = -Infinity;
-  this.draw = function() {
+  this.draw = function () {
     console.log("Hello");
   };
 }
 function Circle(radius) {
   this.radius = radius;
   this.age = Infinity;
-  this.draw = function() {
+  this.draw = function () {
     console.log("draw");
   };
 }
@@ -29,7 +29,7 @@ function MakePerson(height, name, job, age) {
   this.name = name;
   this.job = job;
   this.age = age;
-  this.info = function() {
+  this.info = function () {
     console.log(name + " is a " + job + "!");
   };
 }
@@ -148,3 +148,23 @@ console.log(someWords2);
 //Date Object
 var christmas = new Date(2018, 11, 25);
 console.log(christmas);
+
+//Prime Numbers
+
+showPrimes(20);
+
+function showPrimes(limit) {
+  for (let number = 2; number <= limit; number++) {
+
+    let isPrime = true;
+    for (let factor = 2; factor < number; factor++) {
+      if (number % factor === 0) {
+        isPrime = false;
+        break;
+      }
+    }
+  }
+  if (isPrime === true) {
+    console.log(number);
+  }
+}
