@@ -148,23 +148,3 @@ console.log(someWords2);
 //Date Object
 var christmas = new Date(2018, 11, 25);
 console.log(christmas);
-
-//Prime Numbers
-
-showPrimes(20);
-
-function showPrimes(limit) {
-  for (let number = 2; number <= limit; number++) {
-
-    let isPrime = true;
-    for (let factor = 2; factor < number; factor++) {
-      if (number % factor === 0) {
-        isPrime = false;
-        break;
-      }
-    }
-  }
-  if (isPrime === true) {
-    console.log(number);
-  }
-}
