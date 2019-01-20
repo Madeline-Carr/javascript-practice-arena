@@ -35,3 +35,4 @@ avarage = myTransactions.reduce((acc, val, i, arr) => {
 });
 
 console.log(avarage);
+
