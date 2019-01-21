@@ -12,3 +12,21 @@ function test(y) {
 }
 
 test(3);
+
+//TEST 2
+let me = "Maddie";;
+let you;
+
+function isThereName(myName) {
+
+    try {
+        if (myName) console.log(myName);
+        if (!myName) throw "myName is empty!"
+
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+isThereName(me);
+isThereName(you);
