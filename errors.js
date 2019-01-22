@@ -1,5 +1,5 @@
 //TRY CATCH THROW FINALLY
-let x = 10;
+/*let x = 10;
 
 function test(y) {
     try {
@@ -30,3 +30,16 @@ function isThereName(myName) {
 
 isThereName(me);
 isThereName(you);
+*/
+//Test 3
+function howOld(age) {
+    try {
+        if (typeof (age) != "number") throw new Error("Age is not a number.");
+        if (age < 0) throw new Error("Age can not be less than 0.");
+        if (age >= 0) return "You are " + age + " years old."
+    } catch (err) {
+        console.log(err);
+    }
+}
+console.log(howOld(67));
+console.log(howOld("a"));
