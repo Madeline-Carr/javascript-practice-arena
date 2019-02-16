@@ -37,5 +37,10 @@ console.log(avengersTotalAge);
 const oldAvengers = avengers.filter(avenger => avenger.age >= 100);
 console.log(oldAvengers);
 
+//Filter and Map
+
 const youngAvengers = avengers.filter(avenger => avenger.age < 100);
 console.log(youngAvengers);
+
+const namesOfYoungAvengers = youngAvengers.map(avenger => avenger.name);
+console.log(namesOfYoungAvengers);
