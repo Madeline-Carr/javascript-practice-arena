@@ -20,3 +20,14 @@ console.log(avengersMembers);
 //The avengers in the arrow function is just the name of the element.
 //avengers.map(avengers => avengers.name); Then it runs the arrow function for each element
 // and returns the name property of each. 
+
+//REDUCE
+//Reduce is similar to map but it has an accumulator.
+//This will add all of the avengers ages.
+const avengersTotalAge = avengers.reduce((acc, avenger) => acc + avenger.age, 0);
+//avengers.reduce(); This calls the reduce method.
+//avengers.reduce((acc, avenger) =>); This makes a variable for the accumulator
+// and each element of the array is called avenger.
+//avengers.reduce((acc, avenger) => acc + avenger.age, 0); //This adds the age of 
+//each avenger to the accumulator which is set to 0.
+console.log(avengersTotalAge);
