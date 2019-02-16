@@ -2,7 +2,7 @@
 
 var avengers = [
     { name: "Ironman", powers: ["Arc Reactor", "Flight", "Weapons", "Money"], age: 42 },
-    { name: "Captain America", powers: ["Sheild", "S.H.E.I.L.D", "Weapons"], age: 98 },
+    { name: "Captain America", powers: ["Sheild", "S.H.E.I.L.D", "Weapons"], age: 101 },
     { name: "Hulk", powers: ["Big", "Green", "Large"], age: 43 },
     { name: "Thor", powers: ["Flight", "Mjölnir"], age: 1000 },
 ];
@@ -31,3 +31,11 @@ const avengersTotalAge = avengers.reduce((acc, avenger) => acc + avenger.age, 0)
 //avengers.reduce((acc, avenger) => acc + avenger.age, 0); //This adds the age of 
 //each avenger to the accumulator which is set to 0.
 console.log(avengersTotalAge);
+
+//FILTER 
+//Filter will filter an array and return the elements that meet a condition. 
+const oldAvengers = avengers.filter(avenger => avenger.age >= 100);
+console.log(oldAvengers);
+
+const youngAvengers = avengers.filter(avenger => avenger.age < 100);
+console.log(youngAvengers);
