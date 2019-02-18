@@ -20,3 +20,13 @@ console.log(avengers);
   'Black Widow',
   'Hawkeye' ]
    */
+
+//SLICE
+//Slice will return a section of an array.
+//Slice takes 2 parameters. 
+//The first is the element to start from and the second is how 
+//many elements you want to return.
+avengers = avengers.slice(0, 3);
+console.log(avengers);
+//This will return the first 3 elements of avengers.
+
