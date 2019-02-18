@@ -30,3 +30,9 @@ avengers = avengers.slice(0, 3);
 console.log(avengers);
 //This will return the first 3 elements of avengers.
 
+
+//Slice can also be used with strings.
+let coolestHero = "IronMan";
+coolestHero = coolestHero.slice(0, 4);
+console.log(coolestHero);
+//This will return "Iron"
