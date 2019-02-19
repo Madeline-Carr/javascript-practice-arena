@@ -1,4 +1,4 @@
-//This document will show the diffrences between the map reduce and filter methods.
+//This document will show the differences between the map reduce and filter methods.
 // Read this if your still confused. 
 // https://medium.com/poka-techblog/simplify-your-javascript-use-map-reduce-and-filter-bd02c593cc2d
 
