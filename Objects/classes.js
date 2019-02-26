@@ -24,8 +24,11 @@ class Hero {
         this.name = name;
         this.power = power;
     }
+    //Make a new block & you do not need the function keyword.
     usePower() {
         console.log(this.name + " used " + this.power);
+        //NOTE: You are using this.name and this.power 
+        //Not name and power!
     }
 }
 
