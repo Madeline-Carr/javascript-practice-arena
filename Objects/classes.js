@@ -17,3 +17,17 @@ class Person {
 const ironMan = new Person("Tony", "Stark");
 console.log(ironMan);
 
+
+//Adding Meathods
+class Hero {
+    constructor(name, power) {
+        this.name = name;
+        this.power = power;
+    }
+    usePower() {
+        console.log(this.name + " used " + this.power);
+    }
+}
+
+let theHero = new Hero("Hot Guy", "heat vision");
+theHero.usePower();
