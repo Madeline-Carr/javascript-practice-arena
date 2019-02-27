@@ -34,3 +34,27 @@ class Hero {
 
 let theHero = new Hero("Hot Guy", "heat vision");
 theHero.usePower();
+
+//Sub Classing with Extends
+class Rectangle {
+    constructor(height, width) {
+        this.height = height;
+        this.width = width;
+    }
+    area() {
+        let area = this.height * this.width;
+        console.log("The area is " + area);
+    }
+}
+
+class Square extends Rectangle {
+    constructor(height) {
+        super(height);
+    }
+    area() {
+        let area = this.height * this.height;
+        console.log("The area is " + area + ". Also, this shape is a square!");
+    }
+}
+let mySquare = new Square(5);
+mySquare.area();
