@@ -43,18 +43,25 @@ class Rectangle {
     }
     area() {
         let area = this.height * this.width;
-        console.log("The area is " + area);
+        console.log("The area is " + area + "!");
     }
 }
 
 class Square extends Rectangle {
     constructor(height) {
-        super(height);
+        super(height); //NOTE: Super can only be called once so if there were 
+        //more than one parameters they would all be passed in the same line. 
     }
     area() {
         let area = this.height * this.height;
         console.log("The area is " + area + ". Also, this shape is a square!");
     }
 }
+
+//Rectangle Example
+let myRectangle = new Rectangle(5, 10);
+myRectangle.area();
+
+//Square Example
 let mySquare = new Square(5);
 mySquare.area();
