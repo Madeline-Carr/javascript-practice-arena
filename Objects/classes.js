@@ -45,12 +45,18 @@ class Rectangle {
         let area = this.height * this.width;
         console.log("The area is " + area + "!");
     }
+    dimensions() {
+        console.log("The height is " + this.height + ". The width is " + this.width + ".");
+    }
 }
 
 class Square extends Rectangle {
-    constructor(height) {
-        super(height); //NOTE: Super can only be called once so if there were 
+    constructor(height, width) {
+        super(height, width); //NOTE: Super can only be called once so when there
         //more than one parameters they would all be passed in the same line. 
+        //ALSO NOTE: The width is not used in meathods of this class but it needs 
+        //to be included for the dimensions meathod to work.
+        //This is because this constructor is making the Square. 
     }
     area() {
         let area = this.height * this.height;
@@ -61,7 +67,9 @@ class Square extends Rectangle {
 //Rectangle Example
 let myRectangle = new Rectangle(5, 10);
 myRectangle.area();
+myRectangle.dimensions();
 
 //Square Example
-let mySquare = new Square(5);
+let mySquare = new Square(5, 5);
 mySquare.area();
+mySquare.dimensions();
