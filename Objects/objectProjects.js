@@ -1,4 +1,3 @@
-
 //Project 1: Address Object
 
 const address = {
@@ -110,3 +109,4 @@ let priceRanges = [
 let resturants = [
   { avaragePerPerson: 5 }
 ];
+

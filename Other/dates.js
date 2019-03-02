@@ -9,3 +9,8 @@ console.log(today);
 let newToday = new Date(1996, 08, 07);
 console.log(newToday);
 //Note if you only use one parameter it will be counted as milliseconds.
+
+//GET 
+//To get the year from a date you can use the getFullYear method.
+let thisYear = today.getFullYear();
+console.log(thisYear);
