@@ -14,3 +14,9 @@ console.log(newToday);
 //To get the year from a date you can use the getFullYear method.
 let thisYear = today.getFullYear();
 console.log(thisYear);
+
+//SET
+let birthDay = new Date('August 7, 2019');
+birthDay.setYear(96);
+let year = birthDay.getYear(); // returns 96
+console.log(year);
