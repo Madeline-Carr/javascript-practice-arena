@@ -9,6 +9,7 @@ function arrayFromRange(min, max) {
     }
     return answer;
 }
+
 //Project 2: Includes
 const numbers2 = [1, 2, 3, 4, 5];
 
