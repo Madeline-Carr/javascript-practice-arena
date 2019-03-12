@@ -1,4 +1,4 @@
-//You can 
+//There is a new way to reassign value
 
 let ironMan = {
     name: 'Tony Stark',
@@ -14,10 +14,10 @@ let age = ironMan.age;
 */
 
 //This does the same thing!
-//const { name, powers, age } = ironMan;
+const { name, powers, age } = ironMan;
 
 //If you want to assign a value with a new 
 //name you can do this.
 const { name: hisName } = ironMan;
-//Now hisName is equal to "TonyStark"
-console.log(hisName);
+
+console.log(hisName); // Tony Stark
