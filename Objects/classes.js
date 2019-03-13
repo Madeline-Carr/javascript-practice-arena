@@ -96,3 +96,14 @@ class AnotherPerson {
 
 let myPerson = new AnotherPerson("Maddie");
 console.log(myPerson);
+
+//Inheritance
+//Teacher can walk because it extends AnotherPerson. 
+class Teacher extends AnotherPerson {
+    teach() {
+        console.log("Teach");
+    }
+}
+
+let teacher = new Teacher("Bob");
+console.log(teacher);
