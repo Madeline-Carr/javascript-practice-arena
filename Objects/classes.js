@@ -100,10 +100,14 @@ console.log(myPerson);
 //Inheritance
 //Teacher can walk because it extends AnotherPerson. 
 class Teacher extends AnotherPerson {
+    constructor(name, degree) {
+        super(name);
+        this.degree = degree;
+    }
     teach() {
         console.log("Teach");
     }
 }
 
-let teacher = new Teacher("Bob");
+let teacher = new Teacher("Bob", "MSc");
 console.log(teacher);
