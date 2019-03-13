@@ -73,3 +73,26 @@ myRectangle.dimensions();
 let mySquare = new Square(5, 5);
 mySquare.area();
 mySquare.dimensions();
+
+// Another Example
+
+/*
+let person = {
+    name: "Maddie",
+    walk() {
+        console.log(walk);
+    },
+};
+*/
+
+class AnotherPerson {
+    constructor(name) {
+        this.name = name;
+    }
+    walk() {
+        console.log(walk);
+    }
+}
+
+let myPerson = new AnotherPerson("Maddie");
+console.log(myPerson);
