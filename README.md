@@ -1,9 +1,7 @@
-# javascript-practice-arena
+# JavaScript Testing 
 
-Examples of different JavaScript principles that I am learning.
-
-I am trying to make files that I can reference in the future when I am confused. I want to include a lot of examples that are easy to understand and manipulate. 
+This project is made as a reference to be used while learning JavaScript. The goal is to add in information at a slow pace so it can be understood with examples. There are some examples showing the basic use of meathods and then more complicated examples of how diffrent concepts can be combined.
 
 ---
-##Contributors
+## Contributors
 -Madeline Carr <madelinecarr08@Gmail.com>
