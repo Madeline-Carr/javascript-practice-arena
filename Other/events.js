@@ -20,4 +20,13 @@
 
  3. Event Listeners
  element.addEventListener("event", functionName [, Boolean]);
+ This is a bit more complicated but it gives you more control.
+  */
+
+//Event Flow
+/*
+  There are 2 types of event flow:
+  1. Event Bubbling: Flows outwards
+
+  2. Event Capturing: Flows inwards
   */
