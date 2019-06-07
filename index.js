@@ -3,14 +3,14 @@ function Rectangle(height, width) {
   this.height = height;
   this.width = width;
   this.age = -Infinity;
-  this.draw = function () {
+  this.draw = function() {
     console.log("Hello");
   };
 }
 function Circle(radius) {
   this.radius = radius;
   this.age = Infinity;
-  this.draw = function () {
+  this.draw = function() {
     console.log("draw");
   };
 }
@@ -29,7 +29,7 @@ function MakePerson(height, name, job, age) {
   this.name = name;
   this.job = job;
   this.age = age;
-  this.info = function () {
+  this.info = function() {
     console.log(name + " is a " + job + "!");
   };
 }
